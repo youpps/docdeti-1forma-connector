@@ -27,6 +27,8 @@ class FeedbackController {
       const { error: bodyError, value: body } = bodySchema.validate(req.body);
 
       if (bodyError) {
+        console.log(bodyError);
+
         return res.status(400).json({
           status: Status.Error,
           data: { message: bodyError?.message },
