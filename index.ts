@@ -2,11 +2,9 @@ import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
 import morgan from "morgan";
+import { Controllers } from "./controllers";
 import { Repositories } from "./repositories";
 import { routes } from "./routes";
-import { Controllers } from "./controllers";
-import { VisitFeedbackType } from "./types/visit";
-import { IVisitDialogMessage } from "./types/visitDialogMessage";
 
 dotenv.config();
 

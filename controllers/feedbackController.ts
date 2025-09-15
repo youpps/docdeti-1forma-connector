@@ -52,8 +52,8 @@ class FeedbackController {
         status: Status.Success,
         data: { message: "Feedback has not been saved to Google Sheets" },
       });
-    } catch (error) {
-      console.error("Handle rate error:", error);
+    } catch (e) {
+      console.log(e);
 
       return res.status(500).json({
         status: Status.Error,
